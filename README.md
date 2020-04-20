@@ -144,3 +144,36 @@
 16. What is bootstraping ?
 
 17. Angular PWA and SSR explanation?
+
+
+
+
+# HTML CSS Questions
+
+1) Block level element
+       
+        A block-level element always starts on a new line and takes up the full width available (stretches out to the          left and right as far as it can).
+
+       The <div> element is a block-level element.
+       Examples of block-level elements:
+
+       <div>
+       <h1> - <h6>
+       <p>
+       <form>
+       <header>
+       <footer>
+       <section>
+       
+ 2) Scope level element
+ 
+        An inline element does not start on a new line and only takes up as much width as necessary.
+
+       This is an inline <span> element inside a paragraph.
+
+       Examples of inline elements:
+
+       <span>
+       <a>
+       <img>
+       
