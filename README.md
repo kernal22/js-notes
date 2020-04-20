@@ -79,20 +79,21 @@
 28. What is next() in nodejs?
 
 29. what is Error-handling middleware
-       Ans:    Error-handling middleware always takes four arguments. You must provide four arguments to identify it as an  error-handling middleware function. Even if you don’t need to use the next object, you must specify it to maintain the signature. Otherwise, the next object will be interpreted as regular middleware and will fail to handle errors.
-      
-      app.use(function (err, req, res, next) {
-  console.error(err.stack)
-  res.status(500).send('Something broke!')
-})
+       Ans:  Error-handling middleware always takes four arguments. You must provide four arguments to identify it as an                  error-handling middleware function. Even if you don’t need to use the next object, you must specify it to                      maintain the signature. Otherwise, the next object will be interpreted as regular middleware and will fail to                   handle errors.
+
+             app.use(function (err, req, res, next) {
+              console.error(err.stack)
+              res.status(500).send('Something broke!')
+             })
 
 30. What is Object destructuring?
+
        [a,b] = [10,20];
        output- a=10; b=20;
-       
+
        [a,b, ...rest] = [10, 20, 30, 40, 50];
               a=10; b=20; c= [30,40,50];
-       
+
        {a,b} = {a:10, b:20}
                 a = 10
                 b = 20
@@ -102,10 +103,11 @@
               c = {c:30, d:40, e:50}
 
 31. What is shallow and deep copy and we can implement it?
+
        a) Shallow Copy: Object.aasing({}, obj);
               nested object value is shareable but parent object value is not shareable.
        b) Spread Operator
-              
+
        Deep Copy: JSON.parse(JSON.stringfy(obj));
               nested object value and parent object value bith are not shareable.
 
