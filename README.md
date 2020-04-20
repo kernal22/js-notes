@@ -86,7 +86,9 @@
   res.status(500).send('Something broke!')
 })
 
-30.
+30. What is Object destructuring?
+
+31. What is shallow and deep copy and we can implement it?
 
 # ANGULAR.JS Questions
 
