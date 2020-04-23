@@ -111,6 +111,21 @@
        Deep Copy: JSON.parse(JSON.stringfy(obj));
               nested object value and parent object value bith are not shareable.
 
+32) What is piping in stream or pipe operator in stream?
+       Piping is a process in which we provide the output of one stream as the input to another stream. It is normally used to       get data from one stream and to pass the output of that stream to another stream. There is no limit on piping                  operations.
+       
+       const fs = require('fs');
+
+       // Create a readable stream
+       let readableStream = fs.createReadStream('input.txt');
+
+       // Create a writable stream
+       let writeableStream = fs.createWriteStream('output.txt');
+
+       // Pipe the read and write operations
+       // read input.txt and write data to output.txt
+        readerStream.pipe(writerStream);
+
 # ANGULAR.JS Questions
 
 1. What is Component?
