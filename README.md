@@ -126,6 +126,29 @@
               // read input.txt and write data to output.txt
               readerStream.pipe(writerStream);
 
+33) What is process.nextTick() and When we use process.nextTick ( ) ?
+       
+       When in Node JS, one iteration of the event loop is completed. This is known as a tick. process.nextTick() taking a           callback function which is executed after completing the current iteration/tick of the event loop.
+       
+              process.nextTick(() => {
+                     console.log('excetuted after end of the single iteration on event loop');
+              })
+              console.log('called first');
+              
+              output-> called first
+                     excetuted after end of the single iteration on event loop
+       Uses:
+       
+       To cleanup unwanted resources.
+       To allow users to handle errors.
+       To try a request to run before starting the next iteration of event loop.
+       Allow a callback to run after call stack and before next iteration of event loop.
+       
+ 34) Function Declarations vs. Function Expressions?
+ 
+       
+       
+       
 # ANGULAR.JS Questions
 
 1. What is Component?
