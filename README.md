@@ -145,6 +145,11 @@
        Allow a callback to run after call stack and before next iteration of event loop.
        
  34) Function Declarations vs. Function Expressions?
+       The first example, function add() {}, is called a function declaration. The second example, var add = function                () {}, is called a function expression.
+       
+       function declarations are hoisted to the top of the code by the browser before any code is executed.
+       
+       Function expressions, however, do not hoist. If you try to run a function before you’ve expressed it, you’ll get an           error.
  
        
        
